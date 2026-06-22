@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+}
+
+@theme {
+  --color-primary-blue: #2563EB;
+  --color-primary-teal: #14B8A6;
+  --color-cta-orange: #F97316;
+  --color-text-dark: #111827;
+  --color-text-muted: #4B5563;
+  --font-sans: var(--font-inter), sans-serif;
+  --font-atkinson: var(--font-atkinson), sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+}
+
+/* Enfoque accesible visible */
+*:focus-visible {
+  outline: 3px solid #2563EB;
+  outline-offset: 2px;
+}
+
+/* Reducir animaciones si se prefiere */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-delay: 0s !important;
+    animation-duration: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}
