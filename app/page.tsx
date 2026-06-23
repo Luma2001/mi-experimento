@@ -46,20 +46,28 @@ export default function PortadaPage() {
               PROMPT ÚNICO UTILIZADO
             </Link>
 
-            {/* Link 2: IA Studio */}
+            {/* Link 2: Antigravity */}
             <Link 
-              href="/landing-ia-studio" 
+              href="https://resultado-antigravity.vercel.app/" 
               className="w-full py-4 px-6 bg-teal-600 text-white font-medium rounded-xl shadow-sm hover:bg-teal-500 active:scale-[0.98] transition-all text-center"
             >
-              Landing Page (Versión IA STUDIO)
+              Landing Page (Versión Antigravity)
             </Link>
 
-            {/* Link 3: Antigravity */}
+            {/* Link 3: ChatGPT */}
             <Link 
-              href="/landing-antigravity" 
+              href="https://resultado-chat.vercel.app/" 
               className="w-full py-4 px-6 bg-white text-teal-700 font-medium rounded-xl shadow-sm border-2 border-teal-600 hover:bg-teal-50 active:scale-[0.98] transition-all text-center"
             >
-              Landing Page (Versión Antigravity)
+              Landing Page (Versión ChatGPT)
+            </Link>
+            
+            {/* Link 4: IA-Studio */}
+            <Link 
+              href="https://resultado-ia-studio.vercel.app/#inicio" 
+              className="w-full py-4 px-6 bg-teal-600 text-white font-medium rounded-xl shadow-sm hover:bg-teal-500 active:scale-[0.98] transition-all text-center"
+            >
+              Landing Page (Versión IA Studio)
             </Link>
           </div>
         </nav>
