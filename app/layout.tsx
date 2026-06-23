@@ -5,6 +5,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "¿Qué Decís? - Comunicación accesible en momentos reales. ",
   description: "Distintas versiones de Landing Pages para la webApp '¿Qué Decís?'. Una web app inclusiva cuyo objetivo es derribar las barreras de comunicación entre personas con distintos grados de disminución auditiva y oyentes.",
+  icons: {
+    icon: "/image/luma.webp",
+  }
 };
 
 export default function RootLayout({
