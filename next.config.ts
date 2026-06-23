@@ -1,13 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
   typescript: {
-    // Ignora los errores de TypeScript de las subcarpetas durante la compilación
     ignoreBuildErrors: true,
   },
-  eslint: {
-    // Ignora las advertencias y errores de formato de las subcarpetas al compilar
-    ignoreDuringBuilds: true,
-  },
+  
 };
 
 export default nextConfig;

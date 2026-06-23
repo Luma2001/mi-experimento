@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import Fondo from './image/background.png';
+
 
 export default function PortadaPage() {
   return (
@@ -7,6 +10,21 @@ export default function PortadaPage() {
       {/* Contenedor Principal (Centrado y con límite de ancho para móviles/tablets) */}
       <main className="w-full max-w-md mx-auto grow flex flex-col justify-center text-center space-y-8 my-auto">
         
+        {/* 2. La Imagen de Fondo Optimizada */}
+      <div className="absolute inset-0 -z-10 h-full w-full">
+        <Image
+          src={Fondo}
+          alt="Fondo de la Landing Page con un patrón abstracto y colores suaves"
+          placeholder="blur" // Hace que cargue un difuminado suave mientras descarga la imagen real
+          quality={80} // Optimiza el peso de la imagen al 80% sin perder calidad notoria
+          fill // Hace que la imagen llene todo el div contenedor
+          className="object-cover object-center" // Equivalente a background-size: cover
+        />
+        {/* 3. Capa de superposición (Overlay) oscura para dar contraste al texto */}
+        <div className="absolute inset-0 bg-gray-950/70 backdrop-blur-sm" />
+      </div>
+
+
         {/* Encabezado Académico */}
         <header className="space-y-2">
           <h3 className="text-xs uppercase tracking-widest text-teal-600 font-bold">
@@ -76,6 +94,13 @@ export default function PortadaPage() {
 
       {/* Footer Académico */}
       <footer className="w-full max-w-md mx-auto text-center pt-8 pb-2 border-t border-slate-200">
+        <Image
+          width={64}
+          height={67}
+          src="/image/luma.webp"
+          alt="Avatar de Luma"
+          className="mx-auto w-16 h-16 mb-2"
+        />
         <p className="text-xs font-semibold text-slate-800">
           Luciana Quilcate
         </p>
