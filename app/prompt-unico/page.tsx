@@ -2,7 +2,8 @@ import Link from "next/link";
 
 export default function PromptUnico() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col justify-between p-6 font-sans selection:bg-teal-500 selection:text-white">
+    
+    <div className="relative z-10 w-full max-w-md mx-auto grow flex flex-col justify-center text-center space-y-8 my-auto mt-10">
             <div className="flex flex-col space-y-3 mb-10">
             {/* Link: volver atrás */}
             <Link 
@@ -20,7 +21,7 @@ export default function PromptUnico() {
           <h3 className="text-xs uppercase tracking-widest text-teal-600 font-bold">
             Trabajo Práctico Final - Desarrollo Frontend
           </h3>
-          <h1 className="text-4xl font-extrabold tracking-tight text-slate-950 sm:text-5xl">
+          <h1 className="text-4xl font-extrabold tracking-tight text-slate-100 sm:text-5xl">
             PROMPT ÚNICO UTILIZADO
           </h1>
         </header>
