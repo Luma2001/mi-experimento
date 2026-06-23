@@ -304,7 +304,7 @@ Poder comparar la capacidad de resolución autónoma de cada agente de desarroll
 
 ## Capturas de pantallas
 ### Portada
-![Captura de Portada](public/image/image-1.png)
+![Captura de Portada](public/image/image.png)
 ### Prompt único utilizado
 ![Captura de Prompt](public/image/image-1.png)
 ### Resultado Antigravity
